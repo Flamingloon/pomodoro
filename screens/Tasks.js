@@ -1,10 +1,10 @@
-import { View, Text } from "react-native";
+import { View, Text, Button } from "react-native";
 import React from "react";
 
-const Tasks = () => {
+const Tasks = ({ navigation }) => {
   return (
     <View>
-      <Text>Tasks</Text>
+      <Button onPress={() => navigation.navigate("Home")} title="Tasks->" />
     </View>
   );
 };
